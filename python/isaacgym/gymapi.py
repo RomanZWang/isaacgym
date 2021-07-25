@@ -50,10 +50,10 @@ def _import_active_version():
     module_path = os.path.join(module_dir, "%s.%s" % (module_name, ext))
     package_path = "isaacgym._bindings.%s.%s" % (platform, module_name)
 
-    # print(module_name)
-    # print(module_dir)
-    # print(module_path)
-    # print(package_path)
+    print(module_name)
+    print(module_dir)
+    print(module_path)
+    print(package_path)
 
     if os.path.isfile(module_path):
         # tell Carbonite where the plugins are
